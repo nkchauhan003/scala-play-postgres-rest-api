@@ -1,0 +1,17 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+
+#ADD
+POST /api/employee com.tb.rest.EmployeeController.add
+
+#GET BY ID
+GET /api/employee/:id com.tb.rest.EmployeeController.findById(id: Int)
+
+#GET ALL
+GET /api/employee com.tb.rest.EmployeeController.findAll
+
+#UPDATE
+PUT /api/employee com.tb.rest.EmployeeController.update
+
+#DELETE
+DELETE /api/employee/:id com.tb.rest.EmployeeController.delete(id: Int)
